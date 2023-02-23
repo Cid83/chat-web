@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 5px;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+}
+
+.logo .logo-circle{
+    display: flex;
+    flex-direction: column;
+    margin-right: 6px;
+}
+
+.header .logo .circle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.header .logo .logo-circle .circle-1{
+    background-color: #887a9c;
+    margin-left: 10px;
+}
+
+.header .logo .logo-circle .circle-2{
+    background-color: #4f93a6;
+    
+}
+
+.header .logo h2{
+    color:rgb(3, 3, 65)
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 60px 0;
+    overflow: hidden;
+}
+
+.about .about-picture{
+    display: flex;
+    align-items: center;
+}
+
+.about .about-picture img{
+    width: 100%;
+    height: 100%;
+    max-width: 110px;
+    max-height: 110px;
+    border-radius: 50%;
+    padding: 5px;
+    transition: .3s;
+}
+
+.about .about-picture img:hover{
+    transform: translateY(-5px);
+}
+
+.about-picture .col-1{
+    margin-left: -20px;
+}
+
+.about-picture .col-6{
+    margin-right: -40px;
+}
+
+.col-2, .col-5{
+    margin-bottom: 90px;
+}
+
+.about .about-info{
+    margin: 0 55px;
+}
+
+.about .about-info h1,p{
+    text-align: center;
+}
+
+.about .about-info h1{
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: .7px;
+}
+
+.about .about-info p{
+    font-size: 14px;
+    letter-spacing: .9px;
+    font-weight: 500;
+    color: rgb(160,154,154);
+    margin: 20px 0;
+}
+
+.about .about-info a{
+    text-decoration: none;
+    padding: 13px 35px;
+    display: inline-block;
+    color: #fafafa;
+    font-size: 12px;
+    border-radius: 35px;
+    font-weight: bold;  
+}
+
+.about .about-info .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;   
+}
+
+.about .about-info .btn-1 span{
+    background-color: #887a9c;
+    color: #a0d1df;
+}
+
+.about .about-info .btn-1{
+    background-color: #887a9c;
+    margin-right: 10px;
+    transition: .2s;   
+}
+
+.about .about-info .btn-2{
+    background-color: #4f93a6;
+    transition: .2s;
+}
+
+.about .about-info .btn-1:hover{
+    background-color: #4f93a6;
+    opacity: .5;
+}
+
+.about .about-info .btn-2:hover{
+    background-color: #887a9c;
+    opacity: .5;
+}
+
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 70px 0;
+}
+
+.line .limit{
+    border: 1px solid #ddd;
+    height: 55px;
+}
+
+.line .line-circle{
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    color: #777;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 50px;
+}
+
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .content img{
+    width: 100%;
+    max-width: 200px;
+    margin: 10px 10px;
+    border-radius: 13px;
+    
+}
+
+.container .content img:hover{
+    transform: scale(1.1);
+}
+ .container .information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+ .container .information h4{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 11px;
+    color: #599aac;
+    letter-spacing: 1.8px;
+    text-align: center;
+ }
+
+ .container .information h2{
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: bold;
+ }
+
+ .container .information p{
+    text-align: center;
+    letter-spacing: .8px;
+    color: #777;
+    font-size: 13px;
+    margin: 20px 0;
+ }
+
+ .footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.footer-picture{
+    width: 100%;
+    height: 300px;
+    background-image: url(Gallery/work3.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 100%;
+    background-color: #599aacb2;
+}
+
+.footer-info h4,p{
+    background-color: transparent;
+    color: #ddd;
+}
+
+.footer-info h4{
+    font-size: 24px;
+    margin: 10px 70px;
+    letter-spacing: 1.2px;
+}
+
+.footer-info p{
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.footer-info a{
+    padding: 15px 35px;
+    text-decoration: none;
+    color: #fafafa;
+    font-weight: bold;
+    background-color: #887a9c;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-right: 70px;
+    margin-left: 70px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer-info a span{
+    background-color: #887a9c;
+    color: #a0d1df;
+    font-size: 12px;
+}
+
+.footer .credit{
+    color: #fff;
+    padding-top: 1.5rem;
+}
+
+.footer .credit span{
+    color:rgb(116, 5, 5);
+}
+
+
+@media screen and (max-width: 870px){
+    .footer-info{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+
+    .about .about-info h1{
+        font-size: 35px;  
+    }
+
+    .about .about-info p{
+        font-size: 12px;
+    }
+
+    .about .about-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .picture-1{
+        margin-left: 30px;
+    }
+
+    .about .picture-2{
+        margin-top: 15px;
+    }
+
+    .about .about-info a{
+        margin: 5px 0;
+    } 
+}
+
+@media screen and (max-width: 600px){
+    .container .information h2{
+        font-size: 25px;
+    }
+
+    .container p{
+        font-size:12px ;
+    }
+}
+
+
+
+
